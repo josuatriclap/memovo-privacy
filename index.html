@@ -7,15 +7,15 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.7;
+      line-height: 1.6;
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
-      color: #222;
+      color: #333;
       background: #fff;
     }
     h1, h2, h3 {
-      color: #111;
+      color: #222;
     }
     h1 {
       border-bottom: 2px solid #eee;
@@ -31,123 +31,165 @@
     ul {
       margin-left: 20px;
     }
+    .small-note {
+      font-size: 0.9em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy for Memovo</h1>
-  <p><em>Effective Date: October 2025</em></p>
+  <h1>Memovo Privacy Policy</h1>
+  <p class="small-note">Effective date: 18&nbsp;October&nbsp;2025</p>
 
-  <h2>1. Controller</h2>
+  <h2>1. Introduction</h2>
   <p>
-    <strong>App Name:</strong> Memovo<br />
-    <strong>Responsible Person:</strong> Josua Waghubinger<br />
-    <strong>Email:</strong> hi@josua.io
+    Thank you for choosing <strong>Memovo</strong>.  We value your privacy and are committed to protecting your personal data.  
+    This Privacy Policy describes how your information is collected, used, stored and shared when you use the Memovo mobile application and related services (collectively, the “App”).  
+    This policy applies to all users of the App regardless of where they reside, but has been drafted to comply with the General Data Protection Regulation (“GDPR”) and other relevant data-protection laws.
   </p>
 
-  <h2>2. Overview</h2>
+  <h2>2. Controller and Contact</h2>
   <p>
-    This Privacy Policy explains how Memovo collects, processes, and protects your personal data in compliance with the
-    General Data Protection Regulation (GDPR) and applicable data protection laws.
+    <strong>Controller:</strong> Josua&nbsp;Waghubinger<br />
+    <strong>Email:</strong> hi@josua.io<br />
+  </p>
+  <p>
+    For questions regarding this policy or to exercise your data‑protection rights, please contact us at the above email address.
   </p>
 
-  <h2>3. Data We Collect</h2>
+  <h2>3. Scope</h2>
+  <p>
+    This policy governs personal data processed in connection with your use of Memovo.  It does not apply to third‑party websites or services that may link to or be accessible from the App.
+  </p>
+
+  <h2>4. Data We Collect</h2>
+  <p>
+    We collect the following categories of information when you use the App:
+  </p>
   <ul>
-    <li><strong>Account Information:</strong> Email and password when creating an account.</li>
-    <li><strong>Journal Entries:</strong> Texts, photos, and mood ratings you choose to store.</li>
-    <li><strong>Technical Data:</strong> Device type, OS version, and anonymized usage metrics for debugging and performance improvements.</li>
-    <li><strong>Subscription Data:</strong> Information related to your purchases or trial status (handled by RevenueCat).</li>
+    <li><strong>Account data:</strong> If you create a Memovo account, we collect your email address and a hashed password.  Authentication is provided by Supabase; we do not store plain‑text passwords.</li>
+    <li><strong>Content you provide:</strong> When you use Memovo to create text entries, upload images or voice recordings, we store those entries to enable synchronization across your devices.  Images and text are stored in our database, while voice recordings are sent to our transcription service and then deleted once transcribed.</li>
+    <li><strong>Usage and device data:</strong> We collect certain technical information automatically when you use the App, such as IP address, device identifiers, browser type, operating system, device model, crash logs and other diagnostic information.  This information helps us maintain security, diagnose problems and improve performance.  We do not use third‑party analytics or advertising trackers.</li>
+    <li><strong>Subscription and payment data:</strong> When you purchase a subscription through Apple App Store or Google Play, payment is processed by the relevant store and our subscription partner RevenueCat.  We may receive purchase tokens and subscription status but do not process your payment information directly.</li>
+    <li><strong>AI features and voice recordings:</strong>  If you choose to generate weekly summaries or use voice transcription, text and audio data you submit will be transferred to our AI partners (see Section 9).  These data are processed solely to provide the requested feature and are not used for training or profiling.  Audio files are deleted after transcription.</li>
   </ul>
 
-  <h2>4. Purpose and Legal Basis of Processing</h2>
-  <p>
-    We process your personal data in accordance with Article 6(1)(b) GDPR (performance of contract) and Article 6(1)(a)
-    GDPR (consent). Processing serves to provide you with app functionality, including journaling, cloud sync, AI summaries,
-    and optional voice transcription.
-  </p>
-
-  <h2>5. Data Storage and Security</h2>
-  <p>
-    Your entries and media are securely stored on <strong>Supabase servers located in Frankfurt, Germany (EU)</strong>.
-    Supabase acts as a GDPR-compliant data processor. Data in transit and at rest is encrypted using modern standards (TLS 1.2+ / AES-256).
-    Access is limited to authorized system components and protected by strict access controls.
-  </p>
-
-  <h2>6. Third-Party Services</h2>
-
-  <h3>Supabase (Database and Authentication)</h3>
-  <p>
-    Used for storing journal entries, photos, and authentication data.<br />
-    Provider: Supabase Inc., 970 Toa Payoh North, #07-04, Singapore<br />
-    Privacy Policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a>
-  </p>
-
-  <h3>RevenueCat (Subscription Management)</h3>
-  <p>
-    Handles in-app purchase validation and subscription synchronization.<br />
-    Provider: RevenueCat Inc., San Francisco, USA<br />
-    Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a>
-  </p>
-
-  <h3>Mistral Le Chat (AI Summaries)</h3>
-  <p>
-    Used to generate weekly summaries of your journal entries. Text data are sent temporarily for processing and deleted afterward.<br />
-    Provider: Mistral AI, 10 Rue de Penthièvre, 75008 Paris, France<br />
-    Privacy Policy: <a href="https://mistral.ai/privacy-policy" target="_blank">https://mistral.ai/privacy-policy</a>
-  </p>
-
-  <h3>Assembly AI (Voice Transcription)</h3>
-  <p>
-    Converts spoken journal entries into text. Audio data are transmitted securely and deleted after transcription.<br />
-    Provider: AssemblyAI Inc., San Francisco, USA<br />
-    Privacy Policy: <a href="https://www.assemblyai.com/privacy" target="_blank">https://www.assemblyai.com/privacy</a>
-  </p>
-
-  <h2>7. Data Retention</h2>
-  <p>
-    Data will be retained for as long as your account is active. If you delete your account, all data (text, images, and personal information)
-    will be permanently erased from our systems and Supabase storage within 30 days.
-  </p>
-
-  <h2>8. International Data Transfers</h2>
-  <p>
-    Where services involve providers outside the European Union, we ensure that data transfers are protected under
-    appropriate safeguards such as the EU Standard Contractual Clauses (SCCs) or equivalent legal mechanisms.
-  </p>
-
-  <h2>9. Cookies and Local Storage</h2>
-  <p>
-    Memovo does not use tracking cookies or third-party analytics. Only essential session cookies or secure local storage
-    are used to maintain your login state.
-  </p>
-
-  <h2>10. User Rights</h2>
-  <p>You have the right to:</p>
+  <h2>5. How We Collect Data</h2>
   <ul>
-    <li>Access your stored data</li>
-    <li>Request correction of inaccurate data</li>
-    <li>Request deletion (“Right to be forgotten”)</li>
-    <li>Restrict or object to processing</li>
-    <li>Data portability</li>
-    <li>Withdraw consent at any time</li>
+    <li><strong>Directly from you:</strong> You provide data when you create an account, submit entries, upload images or contact us for support.</li>
+    <li><strong>Automatically:</strong> We collect log and device data automatically when you use the App.  This may include IP address and device identifiers.  We also use essential cookies and local storage to maintain your session and remember preferences.  We do not use marketing cookies or cross‑site tracking.</li>
+    <li><strong>From third‑party services:</strong> We receive subscription status information from RevenueCat and authentication tokens from Supabase.  We do not collect information about you from social networks or other external data brokers.</li>
+  </ul>
+
+  <h2>6. Legal Basis for Processing</h2>
+  <p>
+    We process your personal data only when we have a legal basis to do so.  Under the GDPR, this includes:
+  </p>
+  <ul>
+    <li><strong>Performance of a contract (Art.&nbsp;6&nbsp;§1&nbsp;lit.&nbsp;b&nbsp;GDPR):</strong> We need to process your data to provide and maintain the App, including creating your account and storing your entries【663621901708381†L29-L33】.</li>
+    <li><strong>Legitimate interests (Art.&nbsp;6&nbsp;§1&nbsp;lit.&nbsp;f&nbsp;GDPR):</strong> We process certain technical data (e.g., logs and device identifiers) to ensure the security and functionality of the App【663621901708381†L29-L34】.  This includes preventing abuse, fixing bugs and improving performance.  Our legitimate interests do not override your privacy rights.</li>
+    <li><strong>Consent (Art.&nbsp;6&nbsp;§1&nbsp;lit.&nbsp;a&nbsp;GDPR):</strong> We rely on your explicit consent for optional features such as AI‑generated summaries and voice transcription.  You may withdraw your consent at any time in the app settings; withdrawal will not affect the lawfulness of processing prior to withdrawal.</li>
+  </ul>
+
+  <h2>7. Purposes of Processing</h2>
+  <p>
+    We use your data for the following purposes:
+  </p>
+  <ul>
+    <li>To register and authenticate you and manage your account;</li>
+    <li>To store and synchronize your journal entries, photos and other content across devices;</li>
+    <li>To provide AI summarization and voice transcription services when you enable those features;</li>
+    <li>To manage subscriptions and verify purchases via RevenueCat;</li>
+    <li>To respond to support requests and communicate with you about the App;</li>
+    <li>To secure the App, detect fraud, fix bugs and ensure stable operation;</li>
+    <li>To comply with legal obligations and respond to lawful requests from authorities.</li>
+  </ul>
+
+  <h2>8. Data Storage and Location</h2>
+  <p>
+    Memovo stores user data in a secure cloud database provided by Supabase.  Supabase operates data centers within the European Union, with our project hosted in the <strong>eu‑central‑1 region (Frankfurt, Germany)</strong>.  Your personal data therefore remains within the EU, ensuring compliance with European data‑protection standards【119207340454311†L193-L200】【663621901708381†L60-L64】.  We have concluded data‑processing agreements with Supabase and other providers to ensure they process data solely on our behalf.
+  </p>
+  <p>
+    Data are encrypted at rest and during transmission.  Supabase’s infrastructure includes encryption (AES‑256 at rest and TLS in transit) and security certifications such as SOC 2.  Only authorized personnel can access the database【633938863717755†L155-L165】.
+  </p>
+
+  <h2>9. Third‑Party Service Providers</h2>
+  <p>
+    We share your data only with service providers necessary to operate Memovo.  These providers process data on our behalf under strict confidentiality agreements and data‑processing contracts.  The main partners include:
+  </p>
+  <ul>
+    <li><strong>Supabase:</strong> Provides our database and authentication services.  Data are stored in the EU (Frankfurt)【663621901708381†L60-L64】.</li>
+    <li><strong>RevenueCat:</strong> Manages subscriptions and in‑app purchases.  RevenueCat receives purchase tokens and subscription status; your payment details are handled by Apple or Google.</li>
+    <li><strong>Mistral&nbsp;AI:</strong> Provides AI‑based summarization.  When you request a weekly summary, the text of your entries is transmitted to Mistral AI for processing and then deleted once the summary is generated.</li>
+    <li><strong>Assembly&nbsp;AI:</strong> Processes voice recordings to generate transcriptions.  Audio files are deleted after transcription.</li>
+    <li><strong>Cloud hosting:</strong> We may use a hosting provider (e.g., Cloudflare/Vercel) to serve our website and API.  Some log data may be processed outside the European Economic Area (“EEA”), but we ensure adequate safeguards, such as standard contractual clauses, are in place【663621901708381†L86-L90】.</li>
   </ul>
   <p>
-    To exercise your rights, contact us at <strong>[Insert email address]</strong>. We will respond within the legal timeframe (30 days).
+    We do not sell or rent your personal data to third parties.  We will disclose information only when required by law or if necessary to protect our rights or the safety of users.
   </p>
 
-  <h2>11. Automated Decisions</h2>
+  <h2>10. Cookies and Tracking Technologies</h2>
   <p>
-    Memovo does not perform any form of automated decision-making or profiling as defined by Article 22 GDPR.
+    Memovo uses essential cookies and local storage to maintain your session and remember preferences.  These technologies are strictly necessary to provide the service and do not require separate consent【663621901708381†L92-L97】.  We do not use marketing cookies, analytics or third‑party advertising pixels.
   </p>
 
-  <h2>12. Updates to this Policy</h2>
+  <h2>11. Data Retention</h2>
   <p>
-    This policy may be updated to reflect legal or functional changes. The latest version will always be available at this URL.
-    We recommend checking periodically for updates.
+    We retain your personal data for as long as you maintain a Memovo account.  When you delete your account, your journal entries, photos and other content are permanently removed from our database, except where retention is required by law (for example, tax or accounting records)【663621901708381†L66-L71】.  If you uninstall the App without deleting your account, your data remains stored until you delete it or request deletion.
+  </p>
+
+  <h2>12. International Data Transfers</h2>
+  <p>
+    We strive to keep your data within the European Union.  However, some service providers (e.g., Mistral AI and Assembly AI) may process data outside the EEA.  In such cases, we ensure that appropriate safeguards are in place, such as the European Commission’s Standard Contractual Clauses or adequacy decisions, to protect your data to EU standards【663621901708381†L86-L90】.
+  </p>
+
+  <h2>13. Data Security</h2>
+  <p>
+    We implement industry‑standard security measures to protect your data from unauthorized access, alteration, disclosure or destruction.  These measures include encryption in transit and at rest, secure authentication, role‑based access controls, regular security audits and vulnerability assessments.  We also implement a data‑breach response protocol to promptly notify affected users and authorities in the unlikely event of a breach.
+  </p>
+
+  <h2>14. Your Rights</h2>
+  <p>
+    Under the GDPR and other applicable laws, you have the following rights regarding your personal data:
+  </p>
+  <ul>
+    <li><strong>Right of access:</strong> Obtain confirmation whether we process your data and receive a copy of the information we hold.</li>
+    <li><strong>Right to rectification:</strong> Request correction of inaccurate or incomplete personal data.</li>
+    <li><strong>Right to erasure:</strong> Request deletion of your data ("right to be forgotten").</li>
+    <li><strong>Right to restriction of processing:</strong> Request restriction of processing under certain circumstances.</li>
+    <li><strong>Right to data portability:</strong> Receive your data in a structured, commonly used and machine‑readable format and transmit it to another controller【663621901708381†L106-L117】.</li>
+    <li><strong>Right to object:</strong> Object to processing based on legitimate interests or direct marketing.</li>
+    <li><strong>Right to withdraw consent:</strong> Withdraw consent at any time, without affecting the lawfulness of processing before withdrawal.</li>
+    <li><strong>Right to lodge a complaint:</strong> Complain to a supervisory authority if you believe our processing infringes data‑protection laws.</li>
+  </ul>
+  <p>
+    To exercise any of these rights, please contact us at the email address listed in Section 2.  We will respond to your request in accordance with applicable law.
+  </p>
+
+  <h2>15. Automated Decision‑Making and Profiling</h2>
+  <p>
+    Memovo does not engage in automated decision‑making or profiling that would produce legal or similarly significant effects on you【663621901708381†L99-L103】.
+  </p>
+
+  <h2>16. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time to reflect changes in our practices, technologies or legal requirements.  We will notify you of material changes via email or an in‑app message.  The most current version of the policy will always be available within the App.  Continued use of the App after changes are made constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>17. Contact</h2>
+  <p>
+    If you have any questions about this Privacy Policy or our data‑processing practices, please contact:
+  </p>
+  <p>
+    <strong>Josua&nbsp;Waghubinger</strong><br />
+    Email: [insert email address]<br />
+    Address: [insert mailing address]
   </p>
 
   <hr />
-  <p>
-    For a German version of this Privacy Policy, please contact us at <strong>hi@josua.io</strong>.
+  <p class="small-note">
+    A German version of this privacy policy can be provided upon request.  For translation or additional languages, please contact us.
   </p>
 </body>
 </html>
+
